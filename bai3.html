@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let now = new Date().getFullYear();
+    let birthyear = prompt("Nhập ngày sinh của bạn theo MM/DD/YYYY" );
+    let age = new Date(birthyear).getFullYear();
+    if (now > age) {
+        alert("Tuổi của bạn là:" + (now - age));
+    }else {
+        alert("Tuổi của bạn không hợp lệ.")
+    }
+</script>
+</body>
+</html>

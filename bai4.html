@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="num" type="number">
+<button onclick="delta()">Show</button>
+<div id="tam"></div>
+<div id="three"></div>
+<div id="that"></div>
+<div id="seven"></div>
+<script>
+
+
+        function delta() {
+            let str = document.getElementById("num").value;
+            let fun = 0;
+            let tun = 0;
+            let total = [];
+            let result = [];
+            for (let i = 1; i <= str; i++) {
+                if (i % 3 === 0) {
+                    (total.push(i));
+                    fun = total.length;
+                }
+                if (i % 7 === 0) {
+                    (result.push(i));
+                    tun =  result.length;
+                }
+            }
+            document.getElementById("tam").innerHTML = "có:" + fun + " số chia hết cho 3 là: " + total ;
+            document.getElementById("that").innerHTML = "có:" + tun + " số chia hết cho 7 là: " + result;
+        }
+</script>
+</body>
+</html>
